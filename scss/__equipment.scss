@@ -1,0 +1,36 @@
+.equipment{
+    margin-bottom: 100px;
+
+    &__title{
+        margin-bottom: 50px;
+    }
+
+    &__box{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(2,1fr);
+        gap: 20px 30px;
+
+        &-img{
+            margin-bottom: 10px;
+        }
+
+        &-title{
+            background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 36px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+
+        &-item{
+
+
+            &--one{
+                grid-row: 1/-1;
+            }
+        }
+    }
+}

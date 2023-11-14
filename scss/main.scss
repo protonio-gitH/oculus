@@ -33,6 +33,16 @@ a{
     color: inherit
 }
 
+button{
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+}
+
 img{
     max-width: 100%;
 }
@@ -45,5 +55,18 @@ body{
     color: #5C5C5E;
 }
 
+.section-title{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 @import './_header';
 @import './_top';
+@import './_features';
+@import './_games';
+@import './_buy';
+@import './_equipment';
+@import './_promo';
+@import './_accessories';
+@import './_contacts';
+@import './_footer';

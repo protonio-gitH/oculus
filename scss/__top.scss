@@ -19,6 +19,25 @@
         font-size: 13px;
         margin-bottom: 50px;
     }
+    .buy-btn{
+        display: flex;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+        text-transform: uppercase;
+        padding: 1px;
+        margin: 0;
+        &__text{
+            color: #F6F4F5;
+            padding: 20px 110px;
+        }
+    
+        &__price{
+            background-color: #F6F4F5;
+            padding: 20px 105px;
+        }
+    }
 
 
     
@@ -30,22 +49,36 @@
     font-size: 13px;
 }
 
-.buy-btn{
-    display: flex;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
-    text-transform: uppercase;
-    padding: 1px;
 
-    &__text{
-        color: #F6F4F5;
-        padding: 20px 110px;
+
+@media (max-width:768px){
+    .top{
+        .title{
+            font-size: 66px;
+        }
+        .subtitle{
+            font-size: 24px;
+        }
     }
+}
 
-    &__price{
-        background-color: #F6F4F5;
-        padding: 20px 105px;
+@media (max-width:568px){
+    .top{
+        text-align: center;
+        .buy-btn{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:420px){
+    .top{
+        .title{
+            font-size: 48px;
+        }
+        .subtitle{
+            font-size: 20px;
+        }
     }
 }

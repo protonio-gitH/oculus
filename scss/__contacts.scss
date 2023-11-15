@@ -56,3 +56,15 @@
         }
     }
 }
+
+@media (max-width:820px){
+    .contacts{
+        &__inner{
+            display: block;
+        }
+
+        &__form{
+            margin-bottom: 20px;
+        }
+    }
+}

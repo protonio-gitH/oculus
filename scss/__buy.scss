@@ -9,6 +9,24 @@
     }
 
     &-btn{
+        display: flex;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+        text-transform: uppercase;
+        padding: 1px;
+        margin: 0;
+        &__text{
+            color: #F6F4F5;
+            padding: 20px 110px;
+        }
+        
+        &__price{
+            background-color: #F6F4F5;
+            padding: 20px 105px;
+        }
+    
         margin: 0 auto;
     }
 
@@ -34,6 +52,14 @@
         to{
             transform: translateX(-115%);
             transform-origin: right center;
+        }
+    }
+}
+
+@media (max-width:640px){
+    .buy{
+        &-btn{
+            flex-direction: column;
         }
     }
 }
